@@ -1,3 +1,4 @@
+from unicodedata import name
 from django.shortcuts import render;
 from  django.http import HttpResponse;
 
@@ -17,4 +18,11 @@ def nosotros(request):
 def biblioteca(request):
     return render(request, 'biblioteca/index.html')
 
+
+def crear(request):
+    return render(request, "biblioteca/crear.html")
+
+
+def editar(request):
+    return render(request, "biblioteca/editar.html")
 

@@ -2,6 +2,20 @@
 {% block titulo %} Agregar nuevo libro {% endblock %}
 {% block contenido %}
 
-Formulario para agregar nuevo libro 
+<div class="card">
+    <div class="card-header">
+        crear un libro
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del libro</h4>
+        
+        {% include 'biblioteca/from.html' %}
+
+
+    </div>
+    <div class="card-footer text-muted">
+        
+    </div>
+</div>
 
 {% endblock %}

@@ -9,6 +9,8 @@ urlpatterns = [
     path('', views.inicio, name='inicio'),
     path('nosotros', views.nosotros, name='nosotros'),
     path('biblioteca', views.biblioteca, name='biblioteca'),
+    path('biblioteca/crear', views.crear, name='crear'),
+    path('biblioteca/editar', views.editar, name='editar'),
 ]
 
 

@@ -2,6 +2,20 @@
 {% block titulo %} Agregar  libro {% endblock %}
 {% block contenido %}
 
-Formulario para editar libro 
+<div class="card">
+    <div class="card-header">
+       editar la informacion del libro
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del libro</h4>
+        
+        {% include 'biblioteca/from.html' %}
+
+
+    </div>
+    <div class="card-footer text-muted">
+        
+    </div>
+</div>
 
 {% endblock %}
