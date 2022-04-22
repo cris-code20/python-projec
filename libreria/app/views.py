@@ -16,7 +16,9 @@ def nosotros(request):
 
 
 def biblioteca(request):
-    return render(request, 'biblioteca/index.html')
+    biblioteca = Libro.objects.all()
+    # print(biblioteca)
+    return render(request, 'biblioteca/index.html', {'biblioteca': biblioteca })
 
 
 def crear(request):

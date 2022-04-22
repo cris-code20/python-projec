@@ -11,6 +11,6 @@ urlpatterns = [
     path('biblioteca', views.biblioteca, name='biblioteca'),
     path('biblioteca/crear', views.crear, name='crear'),
     path('biblioteca/editar', views.editar, name='editar'),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 
 

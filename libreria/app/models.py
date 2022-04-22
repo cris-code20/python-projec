@@ -18,5 +18,6 @@ class Libro(models.Model):
     # prezzo = models.FloatField()
     # disponibilidad = models.IntegerField()
 
-    # def __str__(self):
-    #     return self.titulo
+    def __str__(self):
+        fila =  "titulo: " + self.titulo + " - " + "descricion: " + self.descricion
+        return fila
