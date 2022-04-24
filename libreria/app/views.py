@@ -30,7 +30,7 @@ def crear(request):
     return render(request, "biblioteca/crear.html", {'formulario': formulario})
 
 
-def editar(request):
+def editar(request, id):
     nota = Libro.objects.get(id=id)
     formulario = From(request.POST or None, request.FILES or None, instance=nota)
     return render(request, "biblioteca/editar.html", {'formulario': formulario})

@@ -1,7 +1,9 @@
 from distutils.command.upload import upload
 from email.mime import image
+from multiprocessing import set_forkserver_preload
 from tokenize import blank_re
 from django.db import models
+from requests import delete
 
 # Create your models here.
 
@@ -21,3 +23,7 @@ class Libro(models.Model):
     def __str__(self):
         fila =  "titulo: " + self.titulo + " - " + "descricion: " + self.descricion
         return fila
+
+    def delete(self, using=None, keep_parents=False):
+        self.image.storage.delete(self.image.name)
+        super().delete()
