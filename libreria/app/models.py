@@ -6,9 +6,9 @@ from django.db import models
 # Create your models here.
 
 class Libro(models.Model):
-    id     = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     titulo = models.CharField(max_length=100)
-    image  = models.ImageField(upload_to='imagen/', verbose_name="imagen", null=True)
+    image = models.ImageField(upload_to='imagen/', verbose_name="imagen", null=True)
     descricion = models.TextField(verbose_name="descricion" ,null=True)
     # autor  = models.CharField(max_length=100)
     # genero = models.CharField(max_length=100)

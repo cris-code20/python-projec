@@ -26,18 +26,21 @@
                     <td>{{ bibliotecas.titulo }}</td>
                     <td>
 
-                        <img src="{{ bibliotecas.imagen.url }}" height="100">
+                        <img src="{{ bibliotecas.image.url }}" height="100">
 
                     </td>
                     <td>{{ bibliotecas.descricion }}</td>
-                    <td> <a name="" id="" class="btn btn-info" href="{% url 'editar'%}" role="button">editar</a> |
-                        <a name="" id="" class="btn btn-danger" href="#" role="button">editar</a> </td>
+                    <td> 
+                    <a name="" id="" class="btn btn-info" href="{% url 'editar'%}" role="button">editar</a> 
+                    |
+                    <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' nota.id %}" role="button">Borrar</a>
+                </td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="card-footer text-muted">
-        Footer
+        todos los derechos reservados a @cristopher Tolentino 202010703
     </div>
 </div> 
 
